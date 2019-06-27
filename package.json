@@ -8,6 +8,9 @@
     "test": "cross-env DB_ENV=testing jest --watch",
     "start": "node index.js"
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "keywords": [],
   "author": "Lambda School",
   "dependencies": {

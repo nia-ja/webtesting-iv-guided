@@ -13,7 +13,7 @@ server.get('/', (req, res) => {
 server.get('/hobbits', (req, res) => {
   Hobbits.getAll()
     .then(hobbits => {
-      res.status(200).json(rows);
+      res.status(200).json(hobbits);
     })
     .catch(error => {
       res.status(500).json(error);
